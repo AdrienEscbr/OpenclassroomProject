@@ -58,6 +58,54 @@ Dans GitBash :
       
       - commande : git push -u origin main 
       
+      
+--> Gérer les branches :
+
+
+Les branches permettent de développer une partie du projets sans altérer le reste du travail qui a été réalisé et validé.
+
+
+Pour connaitre les branches présentes dans le projet : 
+
+      - commandde : git branch
+      
+REMARQUE : 
+
+Le caractère '*' devant le nom de la branche correspond à la branche dans laquelle on se situe. 
+
+Pour créer une branche : 
+      
+      - commande : git branche NomDeLaBranche
+      
+Pour basculer sur une autre branche : 
+
+      - commande : git checkout NomDeLaBranche
+
+REMARQUE : 
+
+Dans une nouvelle branche, on peut créer autant de répertoires et de fichiers que l'on souhaite.
+
+
+Pour créer une nouvelle version du projet comprenant les évolutions réalisées sur la branche (même chose que précédemment, il faut commit) :
+
+      - commande : git commit -m "Description de ce qu'apporte cet enregistrement"
+      
+Il faut ensuite push les modifications : 
+
+      - commande :  git push -u origin NomDeLaBranche  
+
+
+--> Fusionner notre travail :
+
+Par la suite, on veut pouvoir ajouter le travail treminé et validé dans notre branche pour la rajouter au projet dans notre branche principale.
+Pour ce faire on utilise le 'merge'. On se positionne dans la branche main (avec git chechout main) puis :
+
+      - commande : git merge  NomDeLaBrancheAFusionner
+      
+Voilà, le tour est joué !
+
+
+
 
 --> Les commandes à RETENIR : 
 
@@ -72,4 +120,28 @@ Dans GitBash :
 - Envoyer la nouvelle version sur le dépôt distant grâce à la commande :
 
       git push origin main
+
+- Connaitre les branches présentes dans le projet : 
+
+      git branch
+
+- Créer une branche : 
+      
+      git branche NomDeLaBranche
+      
+- Basculer sur une autre branche : 
+
+      git checkout NomDeLaBranche
+
+- Créer un fichier texte : 
+
+      echo > NomDuFichier.txt
+
+
+
+
+
+
+
+
 
